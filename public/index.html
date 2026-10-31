@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Список дел</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Список дел</h1>
+      <div id="author" class="author">—</div>
+    </header>
+
+    <section id="login-section" class="panel">
+      <label for="token">Токен доступа</label>
+      <div class="row">
+        <input id="token" type="password" placeholder="Bearer token" autocomplete="off" />
+        <button id="login-btn" class="btn">Войти</button>
+      </div>
+      <p id="login-error" class="error hidden"></p>
+    </section>
+
+    <main id="app-section" class="hidden">
+      <section class="panel">
+        <label for="run-id">runId</label>
+        <div class="row">
+          <input id="run-id" type="text" placeholder="например, default" value="default" />
+          <button id="load-btn" class="btn">Загрузить</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <label for="new-title">Новое дело</label>
+        <div class="row">
+          <input id="new-title" type="text" placeholder="Что нужно сделать?" maxlength="200" />
+          <button id="add-btn" class="btn">Добавить</button>
+        </div>
+        <p id="add-error" class="error hidden"></p>
+      </section>
+
+      <ul id="tasks" class="tasks"></ul>
+      <p id="empty" class="empty hidden">Дел пока нет.</p>
+    </main>
+
+    <footer class="footer">
+      <button id="logout-btn" class="btn btn-ghost hidden">Выйти</button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
