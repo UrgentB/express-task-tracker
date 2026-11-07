@@ -124,7 +124,7 @@ pg:         8.13
 
 ```bash
 # 1. Клонировать репозиторий
-git clone https://github.com/<urgentb>/todo-express.git
+git clone https://github.com/UrgentB/express-task-tracker.git
 cd todo-express
 
 # 2. Установить зависимости
@@ -176,7 +176,7 @@ sudo certbot --nginx -d ваш-домен.timeweb.cloud
 
 ## Ручное дело для проверки
 
-После первого запуска создано дело с `runId = "manual"` и заголовком:
+После первого запуска создано дело с `runId = "manual"` и заголовком: 
 
 ```
 Итоговая работа 24.10.2026: urgentb
@@ -185,7 +185,7 @@ sudo certbot --nginx -d ваш-домен.timeweb.cloud
 ## Доступ для проверяющего
 
 ```
-HTTPS-адрес:  https://ваш-домен.timeweb.cloud/
+HTTPS-адрес:  https://dobrodum35.ru
 Токен API:    передан личным сообщением
 Доступ к БД:  передан личным сообщением
 ```
